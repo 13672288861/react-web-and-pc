@@ -1,0 +1,83 @@
+@import (reference) './common.less';
+.adm-button {
+  background: var(--background-color);
+  &::before {
+    background-color: transparent;
+    border: none;
+  }
+  &.adm-button-shape-rounded {
+    border-radius: 35px;
+  }
+}
+.adm-popup {
+  .adm-popup-body {
+    padding: 35px 31px;
+    box-sizing: border-box;
+    .adm-popup-close-icon {
+      right: 33px;
+      top: 33px;
+      height: 40px;
+      width: 40px;
+      .setBack('@pageI/assets/img/icon-ds-pop-close.png', 40px 40px);
+      svg {
+        display: none;
+        // width: 38px !important;
+        // height: 38px !important;
+      }
+    }
+    .ds-pop-title {
+      padding-bottom: 35px;
+    }
+    .ds-pop-footer {
+      display: flex;
+      & :nth-child(1) {
+        width: calc(100% - 62px);
+      }
+      .adm-button {
+        height: 77px;
+        font-size: 29px;
+      }
+    }
+  }
+}
+.adm-dialog {
+  .adm-center-popup-wrap {
+    width: 565px;
+    .adm-center-popup-body {
+      box-sizing: border-box;
+      border-radius: 19px;
+      padding: 38px;
+      // padding: 0;
+      .adm-dialog-title {
+        font-size: 31px;
+        line-height: 50px;
+        font-weight: 600;
+        padding: 0;
+      }
+      .adm-dialog-content {
+        padding: 0;
+      }
+      .adm-dialog-footer {
+        .adm-dialog-action-row {
+          border-top: none;
+          // line-height: 77px;
+        }
+        .adm-dialog-action-row > .adm-dialog-button {
+          border-right: none;
+        }
+        .ds-dialog-button {
+          padding: 0 0;
+          height: 77px;
+          font-weight: 600;
+          line-height: 77px;
+          width: 260px;
+          border-radius: 70px;
+          &.short {
+            width: 215px;
+          }
+        }
+      }
+    }
+  }
+}
+

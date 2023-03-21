@@ -1,0 +1,110 @@
+/**
+  *  CSS公共基础样式
+  *  CSS common base style
+  */
+
+/* 清除浮动 */
+.clearfix{
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: block;
+    content: '';
+    height:0;
+    visibility:hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* 单行文字省略号 */
+.a-line-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 多行文字省略号 */
+.multi-line-ellipsis {
+  display: -webkit-box;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 0.5px 线条 */
+.point-five-px-line {
+  position: relative;
+}
+.point-five-px-line::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 200%;
+  height: 1px;
+  background-color: #e5e5e5;
+  transform: scale(0.5);
+  transform-origin: 0;
+}
+.warpper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  // padding-top: 75px;
+};
+// 设置font类型
+.setFontMixin (@fs: var(--theme-font-size),  @flh: var(--theme-font-line-height) ,@fw: 500, @fc: var(--adm-color-text), @ff: PingFangSC-Medium, PingFang SC) {
+  font-size: @fs;
+  color: @fc;
+  font-weight: @fw;
+  line-height: @flh;
+  // font-family: @ff;
+}
+
+// 设置font类型
+.setBack (@Url, @bsz: 100% 100%, @bp: 0 0, ) {
+  background: url(@Url) no-repeat;
+  background-size: @bsz;
+  background-position: @bp;
+}
+
+.warning {
+  color: var(--adm-color-warning);
+}
+
+.thirdary {
+  color: var(--adm-color-text-thirdary);
+}
+
+.theme-color {
+  color: var(--theme-font-color);
+}
+
+.common-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+}
+.text-align-center {
+  text-align: center;
+}
+.down-arrow{
+  display: inline-block;
+  transition: transform .5s;
+  width: 31px;
+  height: 31px;
+  vertical-align: text-bottom;
+  .setBack('@pageI/assets/img/down-arrow.png', cover)
+}

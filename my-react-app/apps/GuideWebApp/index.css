@@ -1,0 +1,153 @@
+:root {
+  font-family: PingFangSC-Medium, PingFang SC;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  background-color: #F6F6F6;
+  font-size: var(--theme-font-size);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --theme-font-color-white: #ffffff;
+  --theme-font-color: #17C0AE;
+  --theme-color-vip: #4C371A;
+  --theme-font-size: 23px;
+  --theme-size: 23px;
+  --theme-font-line-height: 35px;
+  --theme-border-radius: 35px;
+  --adm-font-size-1: 23px;
+  --adm-font-size-2: 23px;
+  --adm-font-size-3: 23px;
+  --adm-font-size-4: 23px;
+  --adm-font-size-5: 23px;
+  --adm-font-size-6: 23px;
+  --adm-font-size-7: 23px;
+  --adm-font-size-8: 23px;
+  --adm-font-size-9: 25px;
+  --adm-font-size-10: 29px;
+  --adm-color-primary: linear-gradient(270deg, #37D2B0 0%, #17C0AE 100%);
+  --adm-color-success: linear-gradient(270deg, #37D2B0 0%, #17C0AE 100%);
+  --adm-color-warning: #FF8A16;
+  --adm-color-danger: #ff3141;
+  --adm-color-text: #0C0D0D;
+  --adm-color-text-secondary: #646566;
+  --adm-color-text-thirdary: #969799;
+  --adm-color-weak: #999999;
+  --adm-color-light: #cccccc;
+  --adm-color-border: #eeeeee;
+  --adm-color-box: #f5f5f5;
+  --adm-color-white: rgba(255, 255, 255, 0.87);
+  --adm-color-background: #ffffff;
+  --adm-font-size-main: var(--theme-font-size);
+  --adm-font-family: -apple-system, blinkmacsystemfont, 'Helvetica Neue',
+  helvetica, segoe ui, arial, roboto, 'PingFang SC', 'miui',
+  'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  --back-color-secondary: #F6F6F6;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+a {
+  font-weight: 500;
+  color: var(--theme-font-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--theme-font-color);
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+

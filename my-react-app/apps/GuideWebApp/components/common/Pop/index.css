@@ -1,0 +1,67 @@
+.ds-pop .adm-popup-body {
+  height: var(--height);
+  border-radius: 19px  19px 0 0;
+}
+.ds-pop .adm-popup-body.ds-pop-fullscreen {
+  border-radius: 0;
+}
+.ds-pop .ds-pop-title {
+  font-size: 35px;
+  color: var(--adm-color-text);
+  font-weight: 600;
+  line-height: 35px;
+}
+.ds-pop .ds-pop-title > div span {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin-right: 15px;
+}
+.ds-pop .ds-pop-title label {
+  font-size: 27px;
+  vertical-align: text-top;
+  color: var(--adm-color-text-secondary);
+}
+.ds-pop .ds-pop-title .icon-Fullscreen {
+  background: url('@pageI/assets/img/icon-Fullscreen.png') no-repeat;
+  background-size: 38px 38px;
+  background-position: 0 0;
+}
+.ds-pop .ds-pop-title .icon-Shrinkscreen {
+  background: url('@pageI/assets/img/icon-Shrinkscreen.png') no-repeat;
+  background-size: 38px 38px;
+  background-position: 0 0;
+}
+.ds-pop .pop-picker-view {
+  --height: 438px;
+  --item-height: 87px;
+}
+.ds-pop .pop-picker-view .adm-picker-view-column-item {
+  font-size: 31px !important;
+  color: var(--adm-color-text) !important;
+  font-weight: 500 !important;
+  line-height: 31px !important;
+}
+.ds-pop .ds-pop-footer .adm-button {
+  margin: 50px auto;
+}
+.ds-pop .no-warp.adm-popup-body {
+  padding: 0;
+  border-radius: 0;
+  height: 100vh;
+}
+.ds-pop .no-left-right-padding.adm-popup-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ds-pop .no-left-right-padding.adm-popup-body .ds-pop-title {
+  padding: 0 31px;
+}
+.ds-pop .home-map {
+  height: calc(100vh - 650px);
+  padding: 0 38px;
+}
+.ds-pop .home-map.fullscreen {
+  padding: 0;
+  height: calc(100vh - 105px);
+}
